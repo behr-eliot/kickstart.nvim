@@ -664,6 +664,7 @@ require('lazy').setup({
     'hrsh7th/nvim-cmp',
     event = 'InsertEnter',
     dependencies = {
+      'jmbuhr/otter.nvim',
       -- Snippet Engine & its associated nvim-cmp source
       {
         'L3MON4D3/LuaSnip',
@@ -763,6 +764,9 @@ require('lazy').setup({
           --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
         },
         sources = {
+          {
+            name = 'otter',
+          },
           {
             name = 'lazydev',
             -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
@@ -871,6 +875,9 @@ require('lazy').setup({
     dependencies = {
       'jmbuhr/otter.nvim',
     },
+  },
+  {
+    'jbyuki/nabla.nvim',
   },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
